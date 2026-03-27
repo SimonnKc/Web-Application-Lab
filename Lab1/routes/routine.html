@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Schedule | BCT-B</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --surface: #1e293b;
+            --accent: #38bdf8;
+            --border: #334155;
+            --text: #f1f5f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: var(--accent);
+            letter-spacing: -1px;
+        }
+
+        .table-wrap {
+            width: 100%;
+            overflow-x: auto;
+            background: var(--surface);
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 1000px;
+        }
+
+        th {
+            background: #111827;
+            color: var(--accent);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 1.5rem 1rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        td {
+            padding: 1rem;
+            text-align: center;
+            border: 1px solid var(--border);
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+
+        tr:hover td {
+            background: #26334d;
+        }
+
+        .subject {
+            font-weight: 700;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .code {
+            color: var(--accent);
+            font-size: 0.75rem;
+            opacity: 0.8;
+        }
+
+        .instructor {
+            display: block;
+            font-size: 0.8rem;
+            color: #94a3b8;
+            margin-top: 4px;
+        }
+
+        .day-label {
+            font-weight: 800;
+            background: #111827;
+            color: var(--text);
+            width: 120px;
+        }
+
+        .lab-block {
+            border-left: 4px solid var(--accent);
+            background: rgba(56, 189, 248, 0.05);
+        }
+
+        .footer-nav {
+            margin-top: 2rem;
+            text-align: right;
+        }
+
+        .footer-nav a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--accent);
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .footer-nav a:hover {
+            background: var(--accent);
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>BCT-B Weekly Routine</h1>
+        <p>Kantipur Engineering College | Semester VI</p>
+    </div>
+
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>07:00 - 07:50</th>
+                    <th>07:50 - 08:40</th>
+                    <th>08:40 - 09:30</th>
+                    <th>09:30 - 10:20</th>
+                    <th>10:20 - 11:10</th>
+                    <th>11:10 - 12:00</th>
+                    <th>12:00 - 12:50</th>
+                    <th>12:50 - 13:40</th>
+                    <th>13:40 - 14:30</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="day-label">Sunday</td>
+                    <td colspan="3">
+                        <span class="subject">Database Systems</span>
+                        <span class="code">CT652</span>
+                        <span class="instructor">NiA</span>
+                    </td>
+                    <td>—</td>
+                    <td colspan="2">
+                        <span class="subject">Networks & Security</span>
+                        <span class="code">CT702</span>
+                        <span class="instructor">AKC</span>
+                    </td>
+                    <td>—</td>
+                    <td>
+                        <span class="subject">Comp. Architecture</span>
+                        <span class="code">CT603</span>
+                        <span class="instructor">AS</span>
+                    </td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td class="day-label">Monday</td>
+                    <td colspan="2">
+                        <span class="subject">Web App Programming</span>
+                        <span class="code">CT302</span>
+                        <span class="instructor">UP</span>
+                    </td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td colspan="3" class="lab-block">
+                        <span class="subject">Network Security Lab</span>
+                        <span class="instructor">AKC + BiD (A-207)</span>
+                    </td>
+                    <td colspan="2">
+                        <span class="subject">Python for Data Science</span>
+                        <span class="code">ENCT325</span>
+                        <span class="instructor">AkK</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="day-label">Tuesday</td>
+                    <td colspan="2">
+                        <span class="subject">Database Systems</span>
+                        <span class="instructor">NiA</span>
+                    </td>
+                    <td colspan="2">
+                        <span class="subject">Web App Programming</span>
+                        <span class="instructor">UP</span>
+                    </td>
+                    <td>—</td>
+                    <td colspan="2">
+                        <span class="subject">Prob & Stats</span>
+                        <span class="instructor">DDG</span>
+                    </td>
+                    <td colspan="3" class="lab-block">
+                        <span class="subject">Web Programming Lab</span>
+                        <span class="instructor">SqS + PrT</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="day-label">Wednesday</td>
+                    <td colspan="2">
+                        <span class="subject">Comp. Architecture</span>
+                        <span class="instructor">AS</span>
+                    </td>
+                    <td>—</td>
+                    <td>
+                        <span class="subject">Networks & Security</span>
+                        <span class="instructor">AKC</span>
+                    </td>
+                    <td>—</td>
+                    <td colspan="2">
+                        <span class="subject">Python for Data Science</span>
+                        <span class="instructor">AkK</span>
+                    </td>
+                    <td colspan="3" class="lab-block">
+                        <span class="subject">Minor Project / COA Lab</span>
+                        <span class="instructor">AS + RK + PrT</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer-nav">
+        <a href="../index.html">Return to Portal</a>
+    </div>
+
+</body>
+</html>

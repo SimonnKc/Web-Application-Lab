@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon KC | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><h3>SKC</h3></div>
+        <ul class="nav-link">
+            <li><a href="#home">Intro</a></li>
+            <li><a href="#about">Academic</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact">Reach Out</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+    <div class="container">
+        <img class="left-container" src="./src/boy.png" alt="Profile">
+        <div class="right-container">
+            <h1>Simon KC</h1>
+            <p>Computer Engineering Student at Kantipur Engineering College.</p>
+        </div>
+     </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <h1>Education Background</h1>
+            <table class="education-table">
+                <thead>
+                    <tr>
+                        <th>Level</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SEE</td>
+                        <td>NIST School</td>
+                        <td>2077</td>
+                    </tr>
+                    <tr>
+                        <td>+2 Science</td>
+                        <td>Global School of Science</td>
+                        <td>2080</td>
+                    </tr>
+                    <tr>
+                        <td>BE Computer</td>
+                        <td>KEC (TU)</td>
+                        <td>N/A</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="projects-container">
+            <h1>Latest Projects</h1>
+            <div class="project-box">
+                <h3>BCT-B Academic Scheduler</h3>
+                <p>A specialized routine management system for engineering students.</p>
+                <a href="./routes/routine.html"><button>View Schedule</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <h1>Contact</h1>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label>Your Message</label>
+                    <textarea id="message" rows="5"></textarea>
+                </div>
+                <p id="error" style="color: #fb7185; display: none; margin-bottom: 1rem;"></p>
+                <button type="submit">Submit Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
